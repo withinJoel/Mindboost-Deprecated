@@ -1,0 +1,241 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #000;
+    background-color: black;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh
+}
+
+/* Start Buttons */
+.start_btn{
+    position: absolute;
+    top: 77%;
+    left: 45%;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.start_btn button{
+    font-size: 25px;
+    font-weight: 800;
+    color: #4783c7;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: .5s ease-in;
+}
+
+.start_btn button:hover{
+    background: #4783c7;
+    color:white;
+}
+
+.start_btn button::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(-100%, 0);
+    transition: transform 0.3s ease-out;
+}
+
+.start_btn button:hover::before{
+    transform: translate(0, 0);
+}
+
+/*Live Buttons */
+.live_btn{
+    position: absolute;
+    top: 77%;
+    left: 55%;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.live_btn button{
+    font-size: 25px;
+    font-weight: 800;
+    color: #4783c7;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: .5s ease-in;
+}
+
+.live_btn button:hover{
+    background: #4783c7;
+    color:white;
+}
+
+.live_btn button::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(-100%, 0);
+    transition: transform 0.3s ease-out;
+}
+
+.live_btn button:hover::before{
+    transform: translate(0, 0);
+}
+
+.bouncing-blob {
+    width: 32vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform-origin: left top
+}
+
+.bouncing-blob--blue {
+    background: #4783c7;
+}
+
+.bouncing-blob--white {
+    background: #fff;
+    z-index: 2;
+    width: 15vw
+}
+
+.bouncing-blob--purple {
+    background: #8c8ff1;
+}
+
+.bouncing-blob--pink {
+    background: #e289cd50;
+}
+
+.bouncing-blobs-container {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.bouncing-blobs-glass {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(140px);
+    pointer-events: none;
+}
+
+.bouncing-blobs {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero h2 {
+    font-size: 70px;
+    max-width: 800px;
+    line-height: 1;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero h3 {
+    font-size: 150px;
+    max-width: 800px;
+    line-height: 1;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 180px;
+    margin-right: 2%;
+    color: #021123;
+}
+.hero p {
+    font-size: 24px;
+    max-width: 500px;
+    text-align: center;
+    color: #021123;
+}
+
+@media (max-width:1200px) {
+    .bouncing-blobs-glass {
+        backdrop-filter: blur(120px);
+        -webkit-backdrop-filter: blur(120px);
+    }
+}
+
+@media (max-width:500px) {
+    .bouncing-blob {
+        width: 60vw;
+    }
+
+    .bouncing-blob--white {
+        width: 30vw;
+    }
+
+    .bouncing-blobs-glass {
+        backdrop-filter: blur(90px);
+        -webkit-backdrop-filter: blur(90px);
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mindboost</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The best chat bot that ever exist." />
+    <meta name="keywords" content="chat, chat bot, bot" />
+    <meta name="author" content="Joel Jolly" />
+	<link rel="shortcut icon" href="../Logo/Evelina.png">
+    <link rel="stylesheet" href="../Styles/Light.css">
+	<link rel="stylesheet" href="../Styles/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="../Font/Font.css">
+	<script src="https://code.responsivevoice.org/responsivevoice.js?key=YFSSrZjM"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+	<div class="bouncing-blobs-container">
+		<div class="bouncing-blobs-glass"></div>
+		<div class="bouncing-blobs">
+		  <div class="bouncing-blob bouncing-blob--blue"></div>
+		  <div class="bouncing-blob bouncing-blob--blue"></div>
+		  <div class="bouncing-blob bouncing-blob--blue"></div>
+		  <div class="bouncing-blob bouncing-blob--white"></div>
+		  <div class="bouncing-blob bouncing-blob--purple"></div>
+		  <div class="bouncing-blob bouncing-blob--purple"></div>
+		  <div class="bouncing-blob bouncing-blob--pink"></div>
+		</div>
+	  </div>
+	<div class="container">
+		<div class="center">
+       <!-- CHAT BAR BLOCK -->
+		<div class="full-chat-block">
+			<!-- Message Container -->
+			<div class="outer-container">
+			<div class="chat-container">
+				<!-- Messages -->
+				<div class="chatbox-container">
+				<div id="chatbox">
+					<h5 id="chat-timestamp"></h5>
+					<p id="botStarterMessage" class="botText"><span>Typing...</span></p>
+				</div>
+				</div>
+				<div class="suggestions" id="suggestionsTab">
+				<!-- Suggestions will be added dynamically here -->
+				</div>
+				<!-- User input box -->
+				<div class="chat-bar-input-block">
+				<div id="userInput">
+					<input id="textInput" class="input-box" type="text" name="msg" placeholder="Tap 'Enter' to send a message">
+					<p></p>
+				</div>
+				<div class="chat-bar-icons">
+					<i id="voice-icon" style="color: #8AAAE5;" class="fa fa-fw fa-microphone" onclick="startVoiceRecognition()"></i>
+					<i id="chat-icon" class="fas fa-fw fa-paper-plane" style="color: #8AAAE5; cursor: pointer;" onclick="sendButton()"></i>
+				</div>
+				</div>
+				<div id="chat-bar-bottom">
+			</div>
+			</div>
+		</div>
+		<!-- CHAT BAR BLOCK -->  
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../Scripts/Chat.js"></script>
+<script src="../Scripts/Script.js" defer></script>
+<script src="../Mindboost/Mindboost.js"></script>
+<script>
+	// Function to focus on the text input box when the page loads
+	window.addEventListener('load', function () {
+	  document.getElementById('textInput').focus();
+	});
+  </script>
+</html>

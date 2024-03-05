@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparent Background Overlay</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: none;
+      z-index: 3;
+    }
+
+    #overlay {
+      position: relative; /* Changed to fixed to overlay on top of all elements */
+      top: 40px;
+      left: 265px;
+      width: 1000px;
+      height: 650px;
+      border: 3.5px solid black;
+      z-index: 9999; /* Increased z-index to ensure it's on top of all other elements */
+      opacity: .9;
+      border-radius:20px;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Background HTML Page -->
+  <iframe id="background" src="background.html"></iframe>
+
+  <!-- Overlay HTML Page -->
+  <iframe id="overlay" src="live.html"></iframe>
+</body>
+</html>
