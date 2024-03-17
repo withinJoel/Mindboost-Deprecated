@@ -401,8 +401,19 @@ function getBotResponse(input) {
 	if (input === "i am sad") {
 		let ArrayBotResponse = ["Don't worry, I am with you."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
+			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
+			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
+			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
+			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to make your sadness go away: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	if ((input === "i am useless") || (input === "i am stupid") || (input === "i am worthless")) {
 		let ArrayBotResponse = ["No, You're not."];
@@ -954,8 +965,19 @@ function getBotResponse(input) {
 		let ArrayBotResponse = ["Consider practicing mindfulness meditation. It can help you stay grounded and reduce symptoms of depression.","Try to establish a daily routine to give your days structure and stability.","Set small, achievable goals for yourself each day. Accomplishing even the smallest tasks can boost your mood.","Engage in activities that bring you joy, whether it's painting, listening to music, or going for a walk in nature.","Make sure you're getting enough sunlight. Sunlight exposure can help regulate your mood.","Challenge negative thoughts by practicing cognitive-behavioral techniques. Ask yourself if there's evidence to support your thoughts.","Focus on self-care activities like taking a warm bath, reading a book, or cooking a healthy meal.","Stay connected with friends and loved ones, even if it's just through phone calls or video chats.","Consider volunteering or helping others. Doing good deeds can boost your sense of purpose and self-worth.",
 								"Limit your exposure to negative news and social media. It's important to protect your mental health.","Keep a gratitude journal and write down three things you're grateful for each day.","Prioritize getting enough sleep each night. Poor sleep can worsen symptoms of depression.","Consider seeking therapy or counseling from a licensed professional who can provide support and guidance.","Practice deep breathing exercises or progressive muscle relaxation to help calm your mind and body.","Engage in regular physical activity, even if it's just a short walk around the block.","Avoid using alcohol or drugs as a way to cope with depression. They can worsen your symptoms in the long run.","Create a supportive environment at home by surrounding yourself with uplifting and positive influences.","Explore new hobbies or interests to help distract yourself from negative thoughts and feelings.","Remember that it's okay to ask for help when you need it. You don't have to go through this alone."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
+			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
+			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
+			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
+			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to make your depression go away: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	if (input === "i need a job that makes me happy") {
 		let ArrayBotResponse = ["If you are looking for a job that makes you happy, First find what you like and what your interests are and then try to find a job that aligns with that"];
@@ -4880,8 +4902,16 @@ function getBotResponse(input) {
 								"My tip to overcome depression is take some breathing exercise.",
 								"My tip to fully overcome depression is to Sleep well."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/iqcAWup2aCE?si=pcCpibuKYtzgZwvE",
+			"https://youtu.be/J3hxjdyYC1U?si=NOn8EWdD29g1RIXS",
+			"https://youtu.be/REIAGCwrzcI?si=dpdwMRtME8OxgaqZ",
+			"https://youtu.be/e1TdD5vWeSM?si=-iCqHDJszsLGJPZ-"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a video to help you out: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	if ((input === "i am sad give me some tips to overcome it") || (input === "give me some tips to overcome sadness") || (input === "tips to overcome sadness") || (input === "tips to get rid of sadness") || (input === "i need to overcome sadness any tips") || (input === "i need to overcome my sadness any tips") || (input === "i need some tips to overcome sadness") || (input === "i need some tips to overcome sadness") || (input === "i need tips to overcome sadness") || (input === "i need some tips to overcome my sadness") || (input === "i am in sadness and need some tips to overcome it")) {
 		let ArrayBotResponse = ["My tip for you is Don't be alone, Keep yourself busy to remove these negative feelings.",
@@ -4891,51 +4921,125 @@ function getBotResponse(input) {
 								"My tip to overcome sadness is Don't be alone.",
 								"My tip to fully overcome sadness is to watch something that makes you feel good."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
+			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
+			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
+			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
+			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to help you out: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	if ((input === "i am upset give me some tips to overcome it") || (input === "i am very upset give me some tips to overcome it") || (input === "i am upset i need some tips")) {
 		let ArrayBotResponse = ["My tip for you is to try to do some yoga.",
 								"My tip to overcome upset is to try to do some yoga and listening to some songs.",
 								"My tip to fully overcome upset is to try some form of art like dance, painting etc."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
+			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
+			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
+			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
+			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to help you out: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 
 	if ((input === "i have anxiety give me some tips to overcome it") || (input === "i have anxiety issues give me some tips to overcome it") || (input === "i have anxiety i need some tips")) {
 		let ArrayBotResponse = ["Deep breaths! Remember, you got this.", "Just breathe. You're stronger than you think.", "Keep calm and take it one step at a time."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/iqcAWup2aCE?si=pcCpibuKYtzgZwvE",
+			"https://youtu.be/J3hxjdyYC1U?si=NOn8EWdD29g1RIXS",
+			"https://youtu.be/REIAGCwrzcI?si=dpdwMRtME8OxgaqZ",
+			"https://youtu.be/e1TdD5vWeSM?si=-iCqHDJszsLGJPZ-"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a video to help you out: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	
 	if ((input === "i am happy") || (input === "i am very happy") || (input === "i am very happy give me some tips to make it even better") || (input === "i am happy and want to expand my happiness") || (input === "i feel happy") || (input === "i feel very happy") || (input === "i feel very happy today") || (input === "i am extremely happy") || (input === "i am extremely happy today") || (input === "i am so happy today")) {
 		let ArrayBotResponse = ["Keep smiling! You're spreading joy.", "Happy vibes incoming! Enjoy every moment.", "You're beaming! Shine on, you happiness guru."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
+			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
+			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
+			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
+			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to make your happiness last longer: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	
 	if ((input === "i feel like crying") || (input === "i feel like crying very much") || (input === "i feel like crying a lot") || (input === "i feel like crying a lot today") || (input === "i feel like crying out loud")) {
 		let ArrayBotResponse = ["Let those tears flow. You're stronger than you know.", "It's okay to let it out. You're not alone.", "Cry it out, then let the healing begin."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
+			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
+			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
+			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
+			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to make you feel better: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	
 	if ((input === "i am in excitement") || (input === "i am so exicted") || (input === "i am very exicted") || (input === "i am very exicted today") || (input === "i am so exicted") || (input === "i am so exicted today") || (input === "i am very exicted today") || (input === "i am very exicted")){
 		let ArrayBotResponse = ["Woohoo! Excitement overload!", "Pumped up and ready for action!", "Electric vibes! Ride the wave of excitement!"];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/dZ1tiIgLvro?si=0NVq00NO2pKBC_W3",
+			"https://youtu.be/Sv6dMFF_yts?si=rlUOJlugZ2AIcTxE",
+			"https://youtu.be/SSCzDykng4g?si=fEc7d5MDT4iLGx-g",
+			"https://youtu.be/3OnnDqH6Wj8?si=aWam9O32eqrU4ji2",
+			"https://youtu.be/-p8Behv6ji0?si=1f_sE_es0kd1X6fx",
+			"https://youtu.be/kTJczUoc26U?si=ZpcGz0RpyiNWU3a7",
+			"https://youtu.be/e8laLiWolGg?si=Em4PaF9shL3eHZie"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to make your excitement longer: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	
 	if ((input === "i am in confusion") || (input === "i am confused") || (input === "i am very confused today") || (input === "i am confused give me some tips") || (input === "i am very confused give me tips") || (input === "i am very confused give me some tips to overcome it") || (input === "i am super confused today") || (input === "i am very confused today give me some tips to overcome it") || (input === "i am very much confused") || (input === "i am very confused please give me some tips")) {
 		let ArrayBotResponse = ["Confused? Take a breath and let's untangle this together.", "Lost in the maze of confusion? Fear not, we'll find our way out.", "Confusion is just a temporary detour. We'll navigate through it."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
+			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
+			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
+			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
+			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to make your confussion go away: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}
 	
 	if ((input === "i feel lonely")|| (input === "i feel very lonely") || (input === "i am in loneliness") || (input === "i feel very lonely any tips") || (input === "i feel lonely any tips") || (input === "i feel very lonely any tips to overcome it") || (input === "i feel lonely and also empty") || (input === "i feel extremely lonely") || (input === "i dont have anyone") || (input === "i dont have anyone and i am feeling lonely") || (input === "i am feeling very lonely and empty")){
@@ -4945,11 +5049,22 @@ function getBotResponse(input) {
 		return BotResponse;
 	}
 	
-	if ((input === "i am anger") || (input === "i am mad") || (input === "i am very angry") || (input === "is there any way to reduce my anger") || (input === "is there any tips to reduce my anger") || (input === "is it possible to reduce my anger") || (input === "can you help me to reduce my anger") || (input === "i wish to reduce my anger") || (input === "i have anger issues")) {
+	if ((input === "i am angry") || (input === "i am mad") || (input === "i am very angry") || (input === "is there any way to reduce my anger") || (input === "is there any tips to reduce my anger") || (input === "is it possible to reduce my anger") || (input === "can you help me to reduce my anger") || (input === "i wish to reduce my anger") || (input === "i have anger issues")) {
 		let ArrayBotResponse = ["Angry? Let's cool down that fiery temper.", "Keep calm and let's defuse that anger bomb.", "Rage mode? Let's switch it to chill mode."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		responsiveVoice.speak(BotResponse);
-		return BotResponse;
+		let videoLinks = [
+			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
+			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
+			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
+			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
+			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
+		];
+		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+		let responseWithVideo = BotResponse + 'Here is a music video to make your anger vanish away: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		responsiveVoice.speak(responseWithVideo);
+		return responseWithVideo;
 	}	
 	
 	if ((input === "i am ashamed") || (input === "i am feeling very ashamed") || (input === "i am feeling shameful")){
