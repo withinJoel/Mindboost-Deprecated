@@ -399,7 +399,7 @@ function getBotResponse(input) {
 	}
 	//////////////////////////////////////////////////////////////////Extra
 	if (input === "i am sad") {
-		let ArrayBotResponse = ["Just take a walk outside, If that didn't work ","Do some yoga, If that didn't work ","Just take a walk outside, If that didn't work "];
+		let ArrayBotResponse = ["Just take a walk outside, If that didn't work ","Do some yoga, If that didn't work ","Take a relaxing walk outside, If that didn't work "];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
 		let videoLinks = [
 			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
