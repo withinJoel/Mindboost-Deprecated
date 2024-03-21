@@ -44,6 +44,11 @@ function getBotResponse(input) {
 		responsiveVoice.speak(BotResponse);
 		return [BotResponse];
 	}
+	if (input === "mode details") {
+		let ArrayBotResponse = ["You are in safe mode."];
+		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
+		return [BotResponse];
+	}
 	///////////////////////////////////////////Nice to meet you
 	else if (input.includes("nice to meet you") || input.includes("good to see you")) {
 		let ArrayBotResponse = ["Good to see you too.",
