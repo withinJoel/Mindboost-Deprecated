@@ -399,7 +399,7 @@ function getBotResponse(input) {
 	}
 	//////////////////////////////////////////////////////////////////Extra
 	if (input === "i am sad") {
-		let ArrayBotResponse = ["Don't worry, I am with you."];
+		let ArrayBotResponse = ["Just take a walk outside, If that didn't work ","Do some yoga, If that didn't work ","Just take a walk outside, If that didn't work "];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
 		let videoLinks = [
 			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
@@ -411,7 +411,7 @@ function getBotResponse(input) {
 			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
 		];
 		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
-		let responseWithVideo = BotResponse + 'Here is a music video to make your sadness go away: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
+		let responseWithVideo = BotResponse + 'here is a music video to make your sadness go away: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
 		responsiveVoice.speak(responseWithVideo);
 		return responseWithVideo;
 	}
