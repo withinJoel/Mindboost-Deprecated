@@ -44,8 +44,8 @@ function getBotResponse(input) {
 		responsiveVoice.speak(BotResponse);
 		return [BotResponse];
 	}
-	if (input === "mode details") {
-		let ArrayBotResponse = ["You are in safe mode."];
+	if (input === "safe mode") {
+		let ArrayBotResponse = ["You are in safe mode.","(You are in safe mode)"];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
 		return [BotResponse];
 	}
