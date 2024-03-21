@@ -401,15 +401,9 @@ function getBotResponse(input) {
 	if (input === "i am sad") {
 		let ArrayBotResponse = ["Just take a walk outside, If that didn't work ","Do some yoga, If that didn't work ","Take a relaxing walk outside, If that didn't work "];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
-		let videoLinks = [
-			"https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-",
-			"https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI",
-			"https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
-			"https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p",
-			"https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
-			"https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT",
-			"https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"
-		];
+		let videoLinks = ["https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-","https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI","https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
+						  "https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p","https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
+						  "https://youtu.be/M11SvDtPBhA?si=xqBThUqY_EQfzPPT","https://youtu.be/AtKZKl7Bgu0?si=-3vsnSgmyTYRmBBD"];
 		let randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
 		let responseWithVideo = BotResponse + 'here is a music video to make your sadness go away: <a href="' + randomVideoLink + '" target="_blank">' +randomVideoLink+ '</a>';
 		responsiveVoice.speak(responseWithVideo);
