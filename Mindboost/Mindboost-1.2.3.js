@@ -181,6 +181,18 @@ function getBotResponse(input) {
 		responsiveVoice.speak(BotResponse);
 		return BotResponse;
 	}
+	if (input === "i am sad" || input ==="i am very sad"|| input === "i am very sad today" || input === "i am very sad for the past few days") {
+		let ArrayBotResponse = ["What makes you sad?", "Why are you sad?","Why are you feeling sad?","What's the reason behind your sadness?"];
+		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
+		responsiveVoice.speak(BotResponse);
+		return BotResponse;
+	}
+	if (input === "i am depressed" || input ==="i am very depressed"|| input === "i am very depressed today" || input === "i am very depressed for the past few days") {
+		let ArrayBotResponse = ["What makes you depressed?", "Why are you depressed?","Why are you feeling depressed?","What's the reason behind your depression?"];
+		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
+		responsiveVoice.speak(BotResponse);
+		return BotResponse;
+	}
 	if (input === "wonderful" || input === "it is wonderful" || input === "its wonderful" || input === "wonderful mindboost" || input === "wonderful mind boost") {
 		let ArrayBotResponse = ["I'm glad to hear that you think it's wonderful! Is there anything else you would like to share or ask about? 😊"];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
@@ -403,7 +415,7 @@ function getBotResponse(input) {
 		return [BotResponse];
 	}
 	//////////////////////////////////////////////////////////////////Extra
-	if (input === "i am sad") {
+	if (input === "i am sad"|| input.includes("i am sad because")) {
 		let ArrayBotResponse = ["Just take a walk outside, If that didn't work ","Do some yoga, If that didn't work ","Take a relaxing walk outside, If that didn't work ", "Speak to peers about your problems and if that does not help you, "];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
 		let videoLinks = ["https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-","https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI","https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
@@ -960,7 +972,7 @@ function getBotResponse(input) {
 		responsiveVoice.speak(BotResponse);
 		return BotResponse;
 	}
-	if ((input === "i am depressed") || (input === "i am depressed suggest me few tips to overcome it") || (input === "i am depressed suggest me some tips to overcome it") || (input === "i am very depressed") || (input === "i am depressed, help me") || (input === "i am depressed mindboost") || (input === "i am feeling depressed") || (input === "i am feeling very depressed") || (input === "i am in depression") || (input === "i am in depression mindboost") || (input === "i am in very big depression") || (input === "i am in a big depression") || (input === "i am feeling very depressed") || (input === "i am in depression mindboost, suggest me few tips to overcome it") || (input === "i am in depression and need to overcome it") || (input === "help me to overcome depression") || (input === "i am very very depressed") || (input === "i am in a state of depression") || (input === "i am in a state of depression and need some help to overcome it")){
+	if ((input === "i am depressed") || input.includes("i am depressed because") || (input === "i am depressed suggest me few tips to overcome it") || (input === "i am depressed suggest me some tips to overcome it") || (input === "i am very depressed") || (input === "i am depressed, help me") || (input === "i am depressed mindboost") || (input === "i am feeling depressed") || (input === "i am feeling very depressed") || (input === "i am in depression") || (input === "i am in depression mindboost") || (input === "i am in very big depression") || (input === "i am in a big depression") || (input === "i am feeling very depressed") || (input === "i am in depression mindboost, suggest me few tips to overcome it") || (input === "i am in depression and need to overcome it") || (input === "help me to overcome depression") || (input === "i am very very depressed") || (input === "i am in a state of depression") || (input === "i am in a state of depression and need some help to overcome it")){
 		let ArrayBotResponse = ["Consider practicing mindfulness meditation. It can help you stay grounded and reduce symptoms of depression.","Try to establish a daily routine to give your days structure and stability.","Set small, achievable goals for yourself each day. Accomplishing even the smallest tasks can boost your mood.","Engage in activities that bring you joy, whether it's painting, listening to music, or going for a walk in nature.","Make sure you're getting enough sunlight. Sunlight exposure can help regulate your mood.","Challenge negative thoughts by practicing cognitive-behavioral techniques. Ask yourself if there's evidence to support your thoughts.","Focus on self-care activities like taking a warm bath, reading a book, or cooking a healthy meal.","Stay connected with friends and loved ones, even if it's just through phone calls or video chats.","Consider volunteering or helping others. Doing good deeds can boost your sense of purpose and self-worth.",
 								"Limit your exposure to negative news and social media. It's important to protect your mental health.","Keep a gratitude journal and write down three things you're grateful for each day.","Prioritize getting enough sleep each night. Poor sleep can worsen symptoms of depression.","Consider seeking therapy or counseling from a licensed professional who can provide support and guidance.","Practice deep breathing exercises or progressive muscle relaxation to help calm your mind and body.","Engage in regular physical activity, even if it's just a short walk around the block.","Avoid using alcohol or drugs as a way to cope with depression. They can worsen your symptoms in the long run.","Create a supportive environment at home by surrounding yourself with uplifting and positive influences.","Explore new hobbies or interests to help distract yourself from negative thoughts and feelings.","Remember that it's okay to ask for help when you need it. You don't have to go through this alone."];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
