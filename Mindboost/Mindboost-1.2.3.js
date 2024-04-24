@@ -415,8 +415,8 @@ function getBotResponse(input) {
 		return [BotResponse];
 	}
 	//////////////////////////////////////////////////////////////////Extra
-	if (input === "i am sad"|| input.includes("i am sad because")) {
-		let ArrayBotResponse = ["Just take a walk outside, If that didn't work ","Do some yoga, If that didn't work ","Take a relaxing walk outside, If that didn't work ", "Speak to peers about your problems and if that does not help you, "];
+	if (input === "i am depressed because"|| input.includes("i am sad because") || (input.includes("i am stressed because"))) {
+		let ArrayBotResponse = ["Just take a walk outside, If that didn't work ","Do some yoga, If that didn't work ","Take a relaxing walk outside, If that didn't work ", "Speak to peers about your problems and if that does not help you, ","Ok! Be free and take a deep breathe. Do something interested, If that didn't work ","Ok take it easy, Play some games and try to relax those stress causing factors. If that did not work "];
 		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
 		let videoLinks = ["https://youtu.be/JGwWNGJdvx8?si=dOReacKWLSkm2IH-","https://youtu.be/IcrbM1l_BoI?si=roQSrPzWdBvJvyYI","https://youtu.be/Pkh8UtuejGw?si=TzesAAJThuhXLMiG",
 						  "https://youtu.be/euCqAq6BRa4?si=zajw_5LO2PYlU82p","https://youtu.be/31crA53Dgu0?si=R-qmC15vpkJCHFAT",
