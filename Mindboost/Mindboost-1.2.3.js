@@ -3972,7 +3972,24 @@ function getBotResponse(input) {
 		responsiveVoice.speak(BotResponse);
 		return BotResponse;
 	}
-	
+	if ((input === "i feel depressed") || (input === "i feel very depressed")) {
+		ArrayBotResponse = ["Oops, What makes you depressed?","What makes you depressed?","What happened, How come you became depressed?"];
+		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
+		responsiveVoice.speak(BotResponse);
+		return BotResponse;
+	}
+	if ((input === "i feel sad") || (input === "i feel very sad")) {
+		ArrayBotResponse = ["Oops, What makes you sad?","What makes you sad?","What happened, How come you became sad?"];
+		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
+		responsiveVoice.speak(BotResponse);
+		return BotResponse;
+	}
+	if ((input === "i feel stressed") || (input === "i feel very stressed")) {
+		ArrayBotResponse = ["Oops, What makes you stressed?","What makes you stressed?","What happened, How come you became stressed?"];
+		BotResponse = ArrayBotResponse[Math.floor(Math.random() * ArrayBotResponse.length)];
+		responsiveVoice.speak(BotResponse);
+		return BotResponse;
+	}
 	if (input === "what can i do to increase my motivation levels") {
 		BotResponse = "Set inspiring and realistic goals, create a supportive environment, visualize success, challenge negative thoughts, and practice gratitude for the progress you've made.";
 		responsiveVoice.speak(BotResponse);
