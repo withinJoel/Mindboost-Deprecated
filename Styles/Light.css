@@ -21,6 +21,10 @@
     opacity: 0;
   }
   
+.intro-text {
+    color: black;
+}
+
 .center {
   left: 55%;
   flex-basis: 40%;
@@ -180,7 +184,7 @@
     border-radius: 30px;
     padding: 10px;
     font-size: 16px;
-    color: white;
+    color: black;
     background-color: #8AAAE5;
     outline: none;
 }
